@@ -8,6 +8,8 @@ return {
 				null_ls.builtins.formatting.stylua,
         -- js
 				null_ls.builtins.formatting.prettier,
+        -- bash
+        null_ls.builtins.formatting.shfmt,
 			},
 		})
 
