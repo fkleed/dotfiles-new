@@ -12,6 +12,7 @@ return {
       "html",
       "python",
       "typescript",
+      "bash",
     },
     sync_install = false,
     highlight = { enable = true },
