@@ -8,4 +8,5 @@ vim.o.background = "dark"
 vim.opt.swapfile = false
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
+vim.keymap.set("v", "<leader>y", '"+y', opts)
 vim.wo.number = true
