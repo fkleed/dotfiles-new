@@ -118,8 +118,27 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # ---- Eza (better ls) -----
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user"
+alias Ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user"
+alias La="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --all"
 
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
-alias cd="z"
+alias Cd="z"
+
+# Anaconda
+path+=$HOME/anaconda3/bin
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/ferenc/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/ferenc/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/ferenc/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/ferenc/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

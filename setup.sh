@@ -21,6 +21,3 @@ run_with_execute_permission() {
 
 STOW_CONFIG_FILES="$DOTFILES_DIR"/stow/stow.sh
 run_with_execute_permission "$STOW_CONFIG_FILES"
-
-INSTALL_PROGRAMS="$DOTFILES_DIR"/programs/programs.sh
-run_with_execute_permission "$INSTALL_PROGRAMS"

@@ -12,6 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  spec = "ferenc.lazy",
+  spec = { { import = "ferenc.lazy" }, { import = "ferenc.lazy.colorschemes" } },
   change_detection = { notify = false },
 })
